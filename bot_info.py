@@ -7,12 +7,10 @@ import os
 from pystyle import Write, Colors, Colorate, Anime, System
 from time import sleep
 
-# Set console appearance
 os.system('mode con: cols=120 lines=35')
 System.Title("AirFlow Bot Token Checker")
 System.Clear()
 
-# ASCII banner
 banner = r"""
  /$$$$$$$              /$$           /$$$$$$            /$$$$$$         
 | $$__  $$            | $$          |_  $$_/           /$$__  $$        
@@ -24,12 +22,10 @@ banner = r"""
 |_______/  \______/    \___/        |______/|__/  |__/|__/     \______/  
 """
 
-# Fade-in effect using new gradient
 Anime.Fade(banner, Colors.blue_to_purple, Colorate.Vertical, enter=True)
 sleep(1.5)
 System.Clear()
 
-# Show banner again after fade
 Write.Print(banner + "\n", Colors.blue_to_purple, interval=0.0015)
 
 def get_bot_info(token):
@@ -38,7 +34,6 @@ def get_bot_info(token):
         "Authorization": f"Bot {token}"
     }
 
-    # Validate token
     res = requests.get(f"{base_url}/users/@me", headers=headers)
 
     if res.status_code == 200:
@@ -48,7 +43,6 @@ def get_bot_info(token):
         Write.Print(f"[+] Bot ID       : {bot['id']}\n", Colors.blue_to_purple, interval=0.0015)
         Write.Print(f"[+] Bot Avatar   : https://cdn.discordapp.com/avatars/{bot['id']}/{bot['avatar']}.png\n", Colors.blue_to_purple, interval=0.0015)
 
-        # Get guilds
         Write.Print("\n[~] Fetching guilds...\n", Colors.blue_to_purple, interval=0.0015)
         g_res = requests.get(f"{base_url}/users/@me/guilds", headers=headers)
 
@@ -70,7 +64,6 @@ def get_bot_info(token):
         Write.Print(f"[!] Unexpected error: {res.status_code}\n", Colors.blue_to_purple, interval=0.0015)
         print(res.text)
 
-# Main input
 token = Write.Input("\n[>] Bot Token: ", Colors.blue_to_purple, interval=0.0015)
 print()
 get_bot_info(token)
