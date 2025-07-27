@@ -1,6 +1,7 @@
-# Bot Token Validator with SlowType & Gradient
-# Styled like AirFlow Nuker
-# Author: Adapted for AirFlow by ChatGPT
+# Discord bot validator and info fetcher
+# Author: AirFlow
+# Contact: https://airflowd.netlify.app/
+
 
 import requests
 import os
