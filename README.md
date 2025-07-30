@@ -14,7 +14,7 @@ A Python tool to validate Discord bot tokens and fetch detailed bot information 
 - Lists all guilds the bot is in
 - Beautiful console interface with:
   - Gradient ASCII art
-  - Fade-in animations
+  - Fade-in animations 
   - Colorful output
   - SlowType effect for inputs  
  
