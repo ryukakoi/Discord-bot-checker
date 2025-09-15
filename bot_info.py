@@ -1,6 +1,6 @@
 # Discord bot validator and info fetcher
-# Author: AirFlow
-# Contact: https://airflowd.netlify.app/
+# Author: Ryōka
+# Contact: @ryukakoi on discord
 
 
 import requests
@@ -70,3 +70,4 @@ print()
 get_bot_info(token)
 
 input("\nPress Enter to exit...")
+
