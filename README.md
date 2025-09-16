@@ -1,6 +1,6 @@
 # Discord Bot Token Validator & Info Fetcher
 ![standard](https://github.com/user-attachments/assets/f9e554d3-a549-48d5-a94f-4ad5941a0e1e)
-
+ 
 
 ![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-red)
