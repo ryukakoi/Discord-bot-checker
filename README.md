@@ -10,7 +10,7 @@ A Python tool to validate Discord bot tokens and fetch detailed bot information 
 ## Features
 
 - Validates Discord bot tokens
-- Retrieves bot information (username, discriminator, ID, avatar)
+- Retrieves bot information (username, discriminator, ID, avatar) 
 - Lists all guilds the bot is in
 - Beautiful console interface with:
   - Gradient ASCII art 
